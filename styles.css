@@ -1,3 +1,4 @@
+/*
 body{
     margin: 0px;
 }
@@ -10,6 +11,7 @@ header{
     font-family: 'Quicksand', sans-serif;
     font-size: 64px !important;
     padding-top: 200px;
+    text-align: center;
 }
 
 #container{
@@ -51,7 +53,7 @@ img {
 }
 
 /* For About me  */
-.about-grid {
+/*.about-grid {
     display: grid;
     padding: 20px;
     grid-column-gap: 20px;
@@ -85,35 +87,13 @@ img {
     font-size: 21px !important;
     text-align: left;
     padding-left: 150px;
-}
+}*/
 
-/* Make sure that padding behaves as expected */
-* {
-    box-sizing:border-box;
-    border-radius: 5px;
-}
 
-/* Container for skill bars */
-.container {
-  width: 60%; /* Full width */
-  background-color: #ddd; /* Grey background */
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
-}
-
-.skill1 {width: 80%; background-color: #04AA6D;} /* Green */
-.skill2 {width: 51%; background-color: #2196F3;} /* Blue */
 
 
 /* For Tech section  */
-.tech-grid {
+/*.tech-grid {
     display: grid;
     padding: 20px;
     grid-column-gap: 20px;
@@ -137,10 +117,10 @@ img {
     height: 18px;
     width: auto;
     border-radius: 0px;
-}
+}*/
 
 /* Contact Grid */
-.contact-grid {
+/*.contact-grid {
     display: grid;
     padding: 20px;
     grid-column-gap: 20px;
@@ -160,4 +140,165 @@ img {
     height: 50px;
     width: auto;
     border-radius: 0px;
+}*/
+
+
+
+/* Make sure that padding behaves as expected */
+* {
+    box-sizing:border-box;
+}
+
+/* ---------- FOR MAIN SECTION ------------ */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 300px;
+}
+.heading-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 50px;
+}
+
+.top-left{
+    width: 60%;
+    float: left;
+    padding: 15px;
+}
+
+.top-right{
+    width: 40%;
+    float: left;
+    padding: 15px;
+}
+
+.name{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 64px !important;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.image{
+    padding-top: 75px;
+    padding-right: 200px;
+}
+
+img {
+    border-radius: 50%;
+    height: 20rem;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .top-left{
+        width: 100%;
+    }
+    .top-right{
+        width: 100%;
+    }
+    .row::after{
+        margin-bottom: 150px;
+    }
+}
+
+/* ---------- FOR ABOUT SECTION ------------ */
+
+.about-left{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.about-right{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.heading{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 46px !important;
+    text-align: left;
+    padding-left: 164px;
+}
+
+.subheading-left{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px ;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 150px;
+}
+
+.subheading-right{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px ;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+
+
+.content{
+    font-size: 21px !important;
+    text-align: left;
+    padding-left: 150px;
+    padding-right: 75px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container > div{
+    margin: 20px;
+    width: 600px;
+}
+
+/* Container for skill bars */
+.container {
+    width: 60%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+  
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+    border-radius: 5px;
+}
+  
+.skill1 {width: 80%; background-color: #04AA6D;} /* Green */
+.skill2 {width: 51%; background-color: #2196F3;} /* Blue */
+
+@media screen and (max-width: 600px) {
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .heading{
+        padding-left: 10px;
+    }
+    .subheading-left{
+        padding-left: 0px;
+    }
+    .content{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 }
