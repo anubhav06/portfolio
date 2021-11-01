@@ -1,15 +1,146 @@
-body{
-    margin: 0px;
+/* Make sure that padding behaves as expected */
+* {
+    box-sizing:border-box;
 }
 
+/* ---------- FOR HEADER SECTION ------------ */
+
 header{
-    padding: 40px;
+    margin-bottom: 100px;
+}
+.resume{
+    background-color: lightgray;
+    margin-right: 87rem;
+}
+
+.downloadImg{
+    height: 40px;
+    width: auto;
+}
+.headerText{
+    display: inline;
+    font-size: 15px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    header{
+        margin-bottom: 40px;
+    }
+
+    .resume{
+        margin-right: 15rem;
+    }
+}
+
+
+/* ---------- FOR MAIN SECTION ------------ */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 300px;
+}
+.heading-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 50px;
+}
+
+.top-left{
+    width: 60%;
+    float: left;
+    padding: 15px;
+}
+
+.top-right{
+    width: 40%;
+    float: left;
+    padding: 15px;
 }
 
 .name{
     font-family: 'Quicksand', sans-serif;
     font-size: 64px !important;
     padding-top: 200px;
+    text-align: center;
+}
+
+.image{
+    padding-top: 75px;
+    padding-right: 200px;
+}
+
+img {
+    border-radius: 50%;
+    height: 20rem;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .top-left{
+        width: 100%;
+    }
+    .top-right{
+        width: 100%;
+    }
+    .row::after{
+        margin-bottom: 150px;
+    }
+}
+
+/* ---------- FOR ABOUT SECTION ------------ */
+
+.about-left{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.about-right{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.heading{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 46px !important;
+    text-align: left;
+    padding-left: 164px;
+}
+
+.subheading-left{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px ;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 150px;
+}
+
+.subheading-right{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px ;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+
+
+.content{
+    font-size: 21px !important;
+    text-align: left;
+    padding-left: 150px;
+    padding-right: 75px;
 }
 
 #container{
@@ -22,115 +153,65 @@ header{
     width: 600px;
 }
 
-.grid {
-    display: grid;
-    padding: 20px;
-    grid-column-gap: 20px;
-    grid-row-gap: 35px;
-    grid-template-columns: 850px auto;
-    grid-template-rows: 600px auto;
-}
-
-.grid-item {
-    background-color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-
-img {
-    border-radius: 50%;
-    height: 20rem;
-    width: auto;
-}
-
-.image{
-    padding-top: 75px;
-    padding-right: 200px;
-}
-
-/* For About me  */
-.about-grid {
-    display: grid;
-    padding: 20px;
-    grid-column-gap: 20px;
-    grid-row-gap: 35px;
-    grid-template-columns: 700px 700px;
-}
-
-.about-grid-item {
-    background-color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.heading{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 46px !important;
-    text-align: left;
-    padding-left: 150px;
-}
-
-.subheading{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 35px ;
-    font-weight: bold;
-    text-align: left;
-    padding-bottom: 50px;
-}
-
-.content{
-    font-size: 21px !important;
-    text-align: left;
-    padding-left: 150px;
-}
-
-/* Make sure that padding behaves as expected */
-* {
-    box-sizing:border-box;
-    border-radius: 5px;
-}
-
 /* Container for skill bars */
 .container {
-  width: 60%; /* Full width */
-  background-color: #ddd; /* Grey background */
-  margin-top: 5px;
-  margin-bottom: 10px;
+    width: 60%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
 }
-
+  
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+    border-radius: 5px;
 }
-
+  
 .skill1 {width: 80%; background-color: #04AA6D;} /* Green */
 .skill2 {width: 51%; background-color: #2196F3;} /* Blue */
 
-
-/* For Tech section  */
-.tech-grid {
-    display: grid;
-    padding: 20px;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    grid-template-columns: 300px 300px 300px 300px;
-    margin-left: 150px;
+@media screen and (max-width: 600px) {
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .heading{
+        padding-left: 10px;
+    }
+    .subheading-left{
+        padding-left: 0px;
+    }
+    .content{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 }
 
-.tech-grid-item {
-    background-color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: left;
+/* ---------- FOR TECHNOLOGY SECTION ------------ */
+
+.tech-row{
+    margin-left: 155px;
+    margin-right: 100px;
 }
 
-.tech-content{
-    text-align: left;
+.tech-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 300px;
+}
+
+.tech-column{
+    width: 25%;
+    float: left;
+    padding: 20px;
+    font-size: 21px;
 }
 
 .techImages{
@@ -139,25 +220,49 @@ img {
     border-radius: 0px;
 }
 
-/* Contact Grid */
-.contact-grid {
-    display: grid;
-    padding: 20px;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    grid-template-columns: 100px 100px 100px 100px;
-    margin-left: 150px;
+@media screen and (max-width: 600px) {
+    .tech-row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .tech-column{
+        width: 50%;
+    }
 }
 
-.contact-grid-item {
-    background-color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: left;
+/* ---------- FOR CONTACT SECTION ------------ */
+
+
+.contact-row{
+    margin-left: 155px;
+    margin-right: 50rem;
+}
+
+.contact-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 300px;
+}
+
+.contact-column{
+    width: 25%;
+    float: left;
+    padding: 15px;
 }
 
 .contactImages{
     height: 50px;
     width: auto;
     border-radius: 0px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
 }
