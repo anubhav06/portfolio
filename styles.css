@@ -302,3 +302,77 @@ img {
         padding-left: 0px;
     }
 }
+
+/* ---------- FOR TECHNOLOGY SECTION ------------ */
+
+.tech-row{
+    margin-left: 155px;
+    margin-right: 100px;
+}
+
+.tech-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 300px;
+}
+
+.tech-column{
+    width: 25%;
+    float: left;
+    padding: 20px;
+    font-size: 21px;
+}
+
+.techImages{
+    height: 18px;
+    width: auto;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .tech-row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .tech-column{
+        width: 50%;
+    }
+}
+
+/* ---------- FOR CONTACT SECTION ------------ */
+
+
+.contact-row{
+    margin-left: 155px;
+    margin-right: 50rem;
+}
+
+.contact-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 300px;
+}
+
+.contact-column{
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+
+.contactImages{
+    height: 50px;
+    width: auto;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
