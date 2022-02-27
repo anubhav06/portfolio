@@ -1,6 +1,7 @@
 /* Make sure that padding behaves as expected */
 * {
     box-sizing:border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* ---------- FOR HEADER SECTION ------------ */
@@ -171,7 +172,7 @@ img {
     border-radius: 5px;
 }
   
-.skill1 {width: 80%; background-color: #04AA6D;} /* Green */
+.skill1 {width: 80%; background-color: #2196F3;} /* Green */
 .skill2 {width: 51%; background-color: #2196F3;} /* Blue */
 
 @media screen and (max-width: 600px) {
@@ -228,6 +229,50 @@ img {
 
     .tech-column{
         width: 50%;
+    }
+}
+
+
+/* --------- FOR ACHIEVEMNTS SECTION ----------- */
+
+.achievements-row{
+    margin-left: 155px;
+    margin-right: 100px;
+}
+
+.achievements-row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 300px;
+}
+
+.achievements-column{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    font-size: 21px;
+}
+
+.achievements-column:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+.achivementsImages{
+    height: 15rem;
+    width: auto;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1025px) {
+    .achievements-row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .achievements-column{
+        width: 100%;
     }
 }
 
