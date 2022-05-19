@@ -279,6 +279,31 @@ img {
         width: 100%;
     }
 }
+@media screen and (max-width: 1300px){
+    .achivementsImages{
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .achivementsImages{
+        height: 10rem;
+    }
+    .achievements-column{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .achivementsImages{
+        height: 11.5rem;
+    }
+    .achievements-column{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 
 /* ---------- FOR CONTACT SECTION ------------ */
 
