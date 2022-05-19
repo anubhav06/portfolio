@@ -12,6 +12,7 @@ header{
 .resume{
     background-color: lightgray;
     margin-right: 87rem;
+    width: 7rem;
 }
 
 .downloadImg{
@@ -215,6 +216,10 @@ img {
     font-size: 21px;
 }
 
+.tech-column:hover{
+    background-color: rgb(242, 242, 242);
+}
+
 .techImages{
     height: 30px;
     width: auto;
@@ -259,7 +264,7 @@ img {
 }
 
 .achievements-column:hover{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(242, 242, 242);
 }
 
 .achivementsImages{
@@ -332,6 +337,11 @@ img {
     border-radius: 0px;
 }
 
+@media screen and (max-width: 1351px){
+    .contact-row{
+        margin-right: 47rem;
+    }
+}
 @media screen and (max-width: 600px) {
 
     .contact-row{
