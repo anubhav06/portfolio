@@ -9,10 +9,12 @@
 header{
     margin-bottom: 100px;
 }
-.resume{
+.resume-local{
     background-color: lightgray;
     margin-right: 87rem;
     width: 7rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .downloadImg{
@@ -25,8 +27,8 @@ header{
 }
 
 a, a:visited, a:hover, a:active {
-    color: inherit;
-    text-decoration: none;
+    color: inherit !important;
+    text-decoration: none !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -35,7 +37,7 @@ a, a:visited, a:hover, a:active {
         margin-bottom: 40px;
     }
 
-    .resume{
+    .resume-local{
         margin-right: 15rem;
     }
 }
@@ -43,7 +45,7 @@ a, a:visited, a:hover, a:active {
 
 /* ---------- FOR MAIN SECTION ------------ */
 
-.row::after {
+.row-local::after {
     content: "";
     clear: both;
     display: table;
@@ -78,13 +80,18 @@ a, a:visited, a:hover, a:active {
 .image{
     padding-top: 75px;
     padding-right: 200px;
-}
-
-img {
     border-radius: 50%;
     height: 20rem;
     width: auto;
 }
+
+/* img {
+    height: 25rem;
+
+    width: auto;
+} */
+
+
 
 @media screen and (max-width: 600px) {
     .top-left{
@@ -93,7 +100,7 @@ img {
     .top-right{
         width: 100%;
     }
-    .row::after{
+    .row-local::after{
         margin-bottom: 150px;
     }
 }
@@ -117,6 +124,14 @@ img {
     font-size: 46px !important;
     text-align: left;
     padding-left: 164px;
+}
+
+.heading-carousel{
+    font-family: 'Quicksand', sans-serif;
+        /* font-size: 46px !important; */
+        /* text-align: left; */
+    padding-left: 164px;
+    padding-right: 25rem;
 }
 
 .subheading-left{
@@ -145,18 +160,18 @@ img {
     padding-right: 75px;
 }
 
-#container{
+#container-local{
     display: flex;
     flex-wrap: wrap;
 }
 
-#container > div{
+#container-local > div{
     margin: 20px;
     width: 600px;
 }
 
 /* Container for skill bars */
-.container {
+.container-local {
     width: 60%; /* Full width */
     background-color: #ddd; /* Grey background */
     margin-top: 5px;
@@ -192,6 +207,11 @@ img {
     .content{
         padding-right: 0px;
         padding-left: 0px;
+    }
+    
+    /* Container for skill bars */
+    .container-local {
+        width: 90%;
     }
 }
 
@@ -230,6 +250,7 @@ img {
     .tech-row{
         margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: -200px;
     }
 
     .tech-column{
@@ -243,6 +264,39 @@ img {
 
 
 /* --------- FOR ACHIEVEMNTS SECTION ----------- */
+
+.profile {
+    border-radius: 50%;
+    height: 20rem;
+    width: auto;
+}
+
+.carousel-local{
+    border: 3px black solid;
+}
+
+
+.carousel-image {
+    height: 10px !important;
+    border: 10px black solid;
+    /* width: 80% !important; */
+}
+.carousel-subheading{
+    /* color: #2196F3; */
+    color: black;
+    font-weight: 800;
+    background-color: #ddd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.carousel-subdescription{
+    color: #2196F3;
+    font-weight: bold;
+    background-color: #ddd;
+    padding-bottom: 5px;
+}
 
 .achievements-row{
     margin-left: 155px;
@@ -290,6 +344,23 @@ img {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .carousel-image{
+        height: 10px !important;
+        width: 100%;
+        border: 10px solid black !important;
+    }
+
+    .heading-carousel{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .profile {
+        padding-left: 15px;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .achivementsImages{
         height: 10rem;
@@ -312,6 +383,9 @@ img {
 
 /* ---------- FOR CONTACT SECTION ------------ */
 
+footer {
+    margin-top: 300px;
+}
 
 .contact-row{
     margin-left: 155px;
@@ -347,6 +421,10 @@ img {
     .contact-row{
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    footer {
+        margin-top: 200px;
     }
 
 }
